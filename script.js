@@ -10,7 +10,6 @@ function addNew() {
     if (textVal === "") return; // Don't add empty todo
 
     // Create new Div
-
     const newDiv = document.createElement("div");
     newDiv.className ="todo";
 
@@ -42,15 +41,32 @@ function addNew() {
     
     textInput.value = "";
 
+
+
+    reset.addEventListener('click' , () =>{
+        // If the Div contains a button with remove element then remove all of these
+        console.log("reset");
+    
+        if (document.body.contains(newDiv)){
+            console.log("There is a new DIV");
+            itemContainer.removeChild(newDiv);
+        }
+    
+    });
+
 }
 
 // FIX
 
-reset.addEventListener('click' , () =>{
-    console.log("reset");
-    itemContainer.removeChild(newDiv);
+// reset.addEventListener('click' , () =>{
+//     // If the Div contains a button with remove element then remove all of these
+//     console.log("reset");
 
-});
+//     if (document.body.contains(newDiv)){
+//         console.log("There is a new DIV")
+//     }
+
+// });
 
 // Enter key used to add
 

@@ -19,14 +19,13 @@
 
 .container{
     width: 30rem;
-    height:30rem;
+    min-height:30rem;
     background-color: #24232C;
     border-radius: 2%;
     margin-left:auto;
     margin-right: auto;
     display: flex;
     flex-direction: column;
-
     justify-content: space-between;
     margin-top: 2rem;
     padding:2cqb;
@@ -80,8 +79,13 @@ input{
     margin-left:1rem;
     text-align: center;
     margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    margin-left:1.5rem;
 }
-
+.reset:hover{
+    color:#A4FFAF;
+    background-color:#24232C;
+}
 .remove:hover{
     background-color: #24232C;
     color:#A4FFAF;
@@ -92,15 +96,12 @@ input{
     background-color: #A4FFAF;
     color:#A4FFAF;
     cursor:pointer;
-
 }
 
 .removeRed {
     background-color: #24232C;
-
 }
 
 .removeRed:hover {
     background-color: #ec0000;
-
 }
